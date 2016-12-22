@@ -57,6 +57,11 @@ void ac_behavior( Type_R ){}
 void ac_behavior( Type_I ){}
 void ac_behavior( Type_J ){}
  
+void ac_behavior( Type_R_post ){ }
+void ac_behavior( Type_I_post ){ }
+void ac_behavior( Type_J_post ){ }
+
+
 //!Behavior called before starting simulation
 void ac_behavior(begin)
 {
@@ -78,7 +83,6 @@ void ac_behavior(end)
 {
   dbg_printf("@@@ end behavior @@@\n");
 }
-
 
 //!Instruction lb behavior method.
 void ac_behavior( lb )
